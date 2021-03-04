@@ -6908,10 +6908,12 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                             </li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:
+                                                If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -7372,10 +7374,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                         company member posted</i></span></li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -7702,10 +7704,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -8179,10 +8181,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -9207,10 +9209,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -9267,7 +9269,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
     "modified": "",
     "evidence": "",
     "transaction_address": "",
-    "blockchain": "",
+    "blockchain": 0,
     "field_set": [{
         "value": "",
         "options": [{
@@ -9473,10 +9475,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -9811,7 +9813,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "in_batch_id": "",
         "out_batch_id": "",
         "evidence": "",
-        "blockchain": "",
+        "blockchain": 0,
         "transaction_address": "",
         "field_set": [{
             "value": "",
@@ -10042,9 +10044,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: Role name</i></span></li>
                                                     <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                             <i>Description: Is final step</i></span></li>
-                                                    <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                                    <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                     </li>
-                                                    <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                                    <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                     </li>
                                                     <li><span><b>created</b> <i class=object-type>String</i>
                                                             <i>Description: Created Date of the product (System
@@ -10225,7 +10227,7 @@ response = requests.GET(url, headers=headers)</code></pre>
     "in_batch_id": "",
     "out_batch_id": "",
     "evidence": "",
-    "blockchain": "",
+    "blockchain": 0,
     "transaction_address": "",
     "field_set": [{
         "value": "",
@@ -10435,10 +10437,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                         name</i></span></li>
                                             <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                     <i>Description: Is final step</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
                                                         Created Date of the product (System Generate)</i></span></li>
                                             <li><span><b>modified</b> <i class=object-type>String</i> <i>Description:
@@ -10724,10 +10726,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -10784,7 +10786,7 @@ response = requests.GET(url, headers=headers)</code></pre>
     "modified": "",
     "evidence": "",
     "transaction_address": "",
-    "blockchain": "",
+    "blockchain": 0,
     "field_set": [{
         "value": "",
         "options": [{
@@ -10990,10 +10992,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -11338,10 +11340,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -11398,7 +11400,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
     "modified": "",
     "evidence": "",
     "transaction_address": "",
-    "blockchain": "",
+    "blockchain": 0,
     "field_set": [{
         "value": "",
         "options": [{
@@ -11604,10 +11606,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -11943,7 +11945,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "in_batch_id": "",
         "out_batch_id": "",
         "evidence": "",
-        "blockchain": "",
+        "blockchain": 0,
         "transaction_address": "",
         "field_set": [{
             "value": "",
@@ -12174,9 +12176,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: Role name</i></span></li>
                                                     <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                             <i>Description: Is final step</i></span></li>
-                                                    <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                                    <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                     </li>
-                                                    <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                                    <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                     </li>
                                                     <li><span><b>created</b> <i class=object-type>String</i>
                                                             <i>Description: Created Date of the product (System
@@ -12357,7 +12359,7 @@ response = requests.GET(url, headers=headers)</code></pre>
     "in_batch_id": "",
     "out_batch_id": "",
     "evidence": "",
-    "blockchain": "",
+    "blockchain": 0,
     "transaction_address": "",
     "field_set": [{
         "value": "",
@@ -12567,10 +12569,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                         name</i></span></li>
                                             <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                     <i>Description: Is final step</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
                                                         Created Date of the product (System Generate)</i></span></li>
                                             <li><span><b>modified</b> <i class=object-type>String</i> <i>Description:
@@ -12849,10 +12851,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -12909,7 +12911,7 @@ response = requests.GET(url, headers=headers)</code></pre>
     "modified": "",
     "evidence": "",
     "transaction_address": "",
-    "blockchain": "",
+    "blockchain": 0,
     "field_set": [{
         "value": "",
         "options": [{
@@ -13115,10 +13117,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>Array</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>Array</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -13581,13 +13583,13 @@ response = requests.GET(url, headers=headers)</code></pre>
     "image": "",
     "qr_code": "",
     "batch_id": "",
-    "location_list": {
+    "location_list": [{
         "stopover": "",
         "location": {
             "lat": "",
             "lng": ""
         }
-    },
+    }],
     "certificate": [{
         "id": "",
         "user": {
@@ -13626,7 +13628,7 @@ response = requests.GET(url, headers=headers)</code></pre>
         "company_logo": "",
         "company_website": "",
         "evidence": "",
-        "blockchain": "",
+        "blockchain": 0,
         "transaction_address": "",
         "qr_files": [],
         "final_qr": "",
@@ -14037,13 +14039,13 @@ response = requests.GET(url, headers=headers)</code></pre>
     "image": "",
     "qr_code": "",
     "batch_id": "",
-    "location_list": {
+    "location_list": [{
         "stopover": "",
         "location": {
             "lat": "",
             "lng": ""
         }
-    },
+    }],
     "certificate": [{
         "id": "",
         "user": {
@@ -14082,7 +14084,7 @@ response = requests.GET(url, headers=headers)</code></pre>
         "company_logo": "",
         "company_website": "",
         "evidence": "",
-        "blockchain": "",
+        "blockchain": 0,
         "transaction_address": "",
         "qr_files": [],
         "final_qr": "",
