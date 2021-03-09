@@ -6607,7 +6607,6 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                 <div class="highlight model-example">
                                     <pre><code class=language-javascript data-lang=javascript>{
     "current_emails": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "is_qc": "",
@@ -6646,8 +6645,6 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                         <ul>
                                             <li><span><b>current_emails</b> <i class=object-type>String</i>
                                                     <i>Description: Multiple Email of the Company Admin</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous Step Company Admin Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span></li>
                                             <li><span><b>role</b> <i class=object-type>String</i> <i>Description: Role
@@ -6755,7 +6752,6 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
     "assigned_members": [],
     "assigned_companies": [],
     "step_id": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "step": "",
@@ -6814,8 +6810,6 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                             </li>
                                             <li><span><b>step_id</b> <i class=object-type>String</i> <i>Description:
                                                         Current step id</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous User Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span></li>
                                             <li><span><b>role</b> <i class=object-type>String</i> <i>Description: Role
@@ -6984,14 +6978,13 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/ \
-  --body '{"current_emails":"","previous_email":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/', { 
     method: 'POST', 
     body: {
         "current_emails": "",
-        "previous_email": "",
         "workflow_id": "",
         "role": "",
         "is_qc": "",
@@ -7041,7 +7034,6 @@ const options = {
     url: 'https://api.vottun.com/api/v2/supply/steps/workflow/', 
     body: {
         "current_emails": "",
-        "previous_email": "",
         "workflow_id": "",
         "role": "",
         "is_qc": "",
@@ -7093,7 +7085,6 @@ headers = {
 
 body = {
     "current_emails": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "is_qc": "",
@@ -7181,7 +7172,6 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
               "string"
             ],
             "step_id": "string",
-            "previous_email": "string",
             "workflow_id": "string",
             "role": "string",
             "step": 0,
@@ -7253,9 +7243,6 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                             </li>
                                             <li><span><b>step_id</b> <i class=object-type>String</i> <i>Description:
                                                         Current step id</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous User
-                                                        Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span>
                                             </li>
@@ -7551,7 +7538,6 @@ response = requests.GET(url, headers=headers)</code></pre>
     "assigned_members": [],
     "assigned_companies": [],
     "step_id": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "step": "",
@@ -7610,8 +7596,6 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>step_id</b> <i class=object-type>String</i> <i>Description:
                                                         Current step id</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous User Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span></li>
                                             <li><span><b>role</b> <i class=object-type>String</i> <i>Description: Role
@@ -7880,7 +7864,6 @@ response = requests.GET(url, headers=headers)</code></pre>
                                 <div class="highlight model-example">
                                     <pre><code class=language-javascript data-lang=javascript>{
     "current_emails": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "is_qc": "",
@@ -7919,8 +7902,6 @@ response = requests.GET(url, headers=headers)</code></pre>
                                         <ul>
                                             <li><span><b>current_emails</b> <i class=object-type>String</i>
                                                     <i>Description: Multiple Email of the Company Admin</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous Step Company Admin Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span></li>
                                             <li><span><b>role</b> <i class=object-type>String</i> <i>Description: Role
@@ -8028,7 +8009,6 @@ response = requests.GET(url, headers=headers)</code></pre>
     "assigned_members": [],
     "assigned_companies": [],
     "step_id": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "step": "",
@@ -8087,8 +8067,6 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>step_id</b> <i class=object-type>String</i> <i>Description:
                                                         Current step id</i></span></li>
-                                            <li><span><b>previous_email</b> <i class=object-type>String</i>
-                                                    <i>Description: Previous User Email</i></span></li>
                                             <li><span><b>workflow_id</b> <i class=object-type>String</i> <i>Description:
                                                         Id of the workflow</i></span></li>
                                             <li><span><b>role</b> <i class=object-type>String</i> <i>Description: Role
@@ -8277,14 +8255,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request PUT \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/ \
-  --body '{"current_emails":"","previous_email":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/', { 
     method: 'PUT', 
     body: {
         "current_emails": "",
-        "previous_email": "",
         "workflow_id": "",
         "role": "",
         "is_qc": "",
@@ -8334,7 +8311,6 @@ const options = {
     url: 'https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/', 
     body: {
         "current_emails": "",
-        "previous_email": "",
         "workflow_id": "",
         "role": "",
         "is_qc": "",
@@ -8386,7 +8362,6 @@ headers = {
 
 body = {
     "current_emails": "",
-    "previous_email": "",
     "workflow_id": "",
     "role": "",
     "is_qc": "",
