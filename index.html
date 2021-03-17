@@ -2068,7 +2068,8 @@ response = requests.DELETE(url, headers=headers)</code></pre>
 
         <h2 style="margin-bottom: 40px;"><a href="#">Member</a></h2>
         <div class=path>
-            <h3 id=supply-company-member-post-IRI4c><a href=#supply-company-member-post-IRI4c>Add new team member by company admin</a></h3>
+            <h3 id=supply-company-member-post-IRI4c><a href=#supply-company-member-post-IRI4c>Add new team member by
+                    company admin</a></h3>
             <p>Add new team member by company admin</p>
             <div uk-alert class=path-url><span class="api-method api-method-post uk-label">post</span> <span
                     class=root>https://api.vottun.com/api/v2</span> <span class=link
@@ -3868,7 +3869,8 @@ response = requests.GET(url, headers=headers)</code></pre>
         </div>
         <hr class="api-divider" />
         <div class=path>
-            <h3 id=supply-product-ProductId-put-q3fkx><a href=#supply-product-ProductId-put-q3fkx>Update an existing product by ID</a></h3>
+            <h3 id=supply-product-ProductId-put-q3fkx><a href=#supply-product-ProductId-put-q3fkx>Update an existing
+                    product by ID</a></h3>
             <p>Update an existing product by ID</p>
             <div uk-alert class=path-url><span class="api-method api-method-put uk-label">put</span> <span
                     class=root>https://api.vottun.com/api/v2</span> <span class=link
@@ -4109,7 +4111,8 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         </div>
         <hr class="api-divider" />
         <div class=path>
-            <h3 id=supply-product-ProductId-delete-0sfXd><a href=#supply-product-ProductId-delete-0sfXd>Delete a product by ID</a></h3>
+            <h3 id=supply-product-ProductId-delete-0sfXd><a href=#supply-product-ProductId-delete-0sfXd>Delete a product
+                    by ID</a></h3>
             <p>Delete a product by ID</p>
             <div uk-alert class=path-url><span class="api-method api-method-delete uk-label">delete</span> <span
                     class=root>https://api.vottun.com/api/v2</span> <span class=link
@@ -6201,7 +6204,8 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         </div>
         <hr class="api-divider" />
         <div class=path>
-            <h3 id=supply-workflow-WorkflowId-delete-0VszE><a href=#supply-workflow-WorkflowId-delete-0VszE>Delete a Workflow by ID</a></h3>
+            <h3 id=supply-workflow-WorkflowId-delete-0VszE><a href=#supply-workflow-WorkflowId-delete-0VszE>Delete a
+                    Workflow by ID</a></h3>
             <p>Delete a Workflow by ID</p>
             <div uk-alert class=path-url><span class="api-method api-method-delete uk-label">delete</span> <span
                     class=root>https://api.vottun.com/api/v2</span> <span class=link
@@ -6627,7 +6631,12 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -6709,6 +6718,16 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: Name of the option</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the option</i></span></li>
+                                                            <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                    <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                            <li><span><b>role</b> <i class=object-type>String</i>
+                                                                    <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                            <li><span><b>user</b> <i class=object-type>String</i>
+                                                                    <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                            <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                    <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                            <li><span><b>email</b> <i class=object-type>String</i>
+                                                                    <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -6771,7 +6790,12 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -6800,7 +6824,8 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>assigned_companies</b> <i
-                                                        class=object-type>Array</i><i>Description: Multiple company admins
+                                                        class=object-type>Array</i><i>Description: Multiple company
+                                                        admins
                                                         assigned for same step - company email id (string)</i></span>
                                                 <ul></ul>
                                             </li>
@@ -6872,6 +6897,16 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: Name of the option</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the option</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                    <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                    <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                    <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                    <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -6899,11 +6934,12 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
                                             <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
-                                                If primary field is true then it should same key name</i></span>
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:
-                                                If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description:
+                                                        If primary field is true then it should same value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -6974,7 +7010,7 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/', { 
@@ -7005,7 +7041,12 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }]
         }],
         "no_out_badge": 0,
@@ -7054,7 +7095,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }]
         }],
         "no_out_badge": 0,
@@ -7105,7 +7151,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -7193,7 +7244,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 "options": [
                   {
                     "label": "string",
-                    "key": "string"
+                    "key": "string",
+                    "step": "",
+                    "role": "",
+                    "user": "",
+                    "company_name": "",
+                    "email": ""
                   }
                 ]
               }
@@ -7232,7 +7288,8 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>assigned_companies</b> <i
-                                                        class=object-type>Array</i><i>Description: Multiple company admins
+                                                        class=object-type>Array</i><i>Description: Multiple company
+                                                        admins
                                                         assigned
                                                         for same step - company email id (string)</i></span>
                                                 <ul></ul>
@@ -7327,6 +7384,16 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the
                                                                         option</i></span></li>
+                                                            <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                            <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                            <li><span><b>role</b> <i class=object-type>String</i>
+                                                                            <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                    <li><span><b>user</b> <i class=object-type>String</i>
+                                                                            <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                    <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                            <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                    <li><span><b>email</b> <i class=object-type>String</i>
+                                                                            <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -7357,10 +7424,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                         company member posted</i></span></li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -7557,7 +7627,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -7586,7 +7661,8 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>assigned_companies</b> <i
-                                                        class=object-type>Array</i><i>Description: Multiple company admins
+                                                        class=object-type>Array</i><i>Description: Multiple company
+                                                        admins
                                                         assigned for same step - company email id (string)</i></span>
                                                 <ul></ul>
                                             </li>
@@ -7658,6 +7734,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: Name of the option</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the option</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -7684,10 +7770,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -7884,7 +7973,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -7966,6 +8060,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: Name of the option</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the option</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -8028,7 +8132,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -8057,7 +8166,8 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>assigned_companies</b> <i
-                                                        class=object-type>Array</i><i>Description: Multiple company admins
+                                                        class=object-type>Array</i><i>Description: Multiple company
+                                                        admins
                                                         assigned for same step - company email id (string)</i></span>
                                                 <ul></ul>
                                             </li>
@@ -8129,6 +8239,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: Name of the option</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: Value of the option</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -8155,10 +8275,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>out_batch_id</b> <i class=object-type>String</i>
                                                     <i>Description: Out batch ID</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
@@ -8251,7 +8374,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request PUT \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/', { 
@@ -8282,7 +8405,12 @@ response = requests.GET(url, headers=headers)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }]
         }],
         "no_out_badge": 0,
@@ -8331,7 +8459,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }]
         }],
         "no_out_badge": 0,
@@ -8382,7 +8515,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }]
     }],
     "no_out_badge": 0,
@@ -8489,7 +8627,8 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                     <li><span><b>step_count</b> <i class=object-type>Integer</i>
                                                             <i>Description: Total step of workflow</i></span></li>
                                                     <li><span><b>user_count</b> <i class=object-type>Integer</i>
-                                                            <i>Description: Total assigned members of Workflow</i></span></li>
+                                                            <i>Description: Total assigned members of
+                                                                Workflow</i></span></li>
                                                     <li><span><b>image</b> <i class=object-type>String</i>
                                                             <i>Description: Workflow image</i></span></li>
                                                     <li><span><b>send_mail_but</b> <i class=object-type>Boolean</i>
@@ -9074,7 +9213,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -9126,7 +9270,8 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                             Product (choose single) then have to pass
                                                                             value as in string format. ie. :
                                                                             'key-1'.<br>If field type is 'timestamp'
-                                                                            then value should be 'dd-mm-yyyy HH:MM PM/AM'
+                                                                            then value should be 'dd-mm-yyyy HH:MM
+                                                                            PM/AM'
                                                                             or if field type is 'date' then value should
                                                                             be 'yyyy-mm-dd')</key-3>
                                                                     </key-2>
@@ -9137,6 +9282,16 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -9180,10 +9335,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -9245,7 +9403,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -9371,6 +9534,16 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -9446,10 +9619,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -9512,7 +9688,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/activity/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/', { 
@@ -9529,7 +9705,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -9578,7 +9759,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -9629,7 +9815,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -9790,7 +9981,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -10015,9 +10211,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: Role name</i></span></li>
                                                     <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                             <i>Description: Is final step</i></span></li>
-                                                    <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                                    <li><span><b>primary_key</b> <i class=object-type>String</i>
+                                                            <i>Description: If primary field is true then it should same
+                                                                key name</i></span>
                                                     </li>
-                                                    <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                                    <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                            <i>Description: If primary field is true then it should same
+                                                                value</i></span>
                                                     </li>
                                                     <li><span><b>created</b> <i class=object-type>String</i>
                                                             <i>Description: Created Date of the product (System
@@ -10204,7 +10404,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -10331,6 +10536,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -10408,10 +10623,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                         name</i></span></li>
                                             <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                     <i>Description: Is final step</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
                                                         Created Date of the product (System Generate)</i></span></li>
                                             <li><span><b>modified</b> <i class=object-type>String</i> <i>Description:
@@ -10591,7 +10809,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -10643,7 +10866,8 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                             Product (choose single) then have to pass
                                                                             value as in string format. ie. :
                                                                             'key-1'.<br>If field type is 'timestamp'
-                                                                            then value should be 'dd-mm-yyyy HH:MM PM/AM'
+                                                                            then value should be 'dd-mm-yyyy HH:MM
+                                                                            PM/AM'
                                                                             or if field type is 'date' then value should
                                                                             be 'yyyy-mm-dd')</key-3>
                                                                     </key-2>
@@ -10654,6 +10878,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -10697,10 +10931,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -10762,7 +10999,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -10888,6 +11130,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -10963,10 +11215,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -11029,7 +11284,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/', { 
@@ -11046,7 +11301,12 @@ response = requests.GET(url, headers=headers)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -11095,7 +11355,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -11146,7 +11411,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -11212,7 +11482,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -11259,7 +11534,8 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     <li><span><b>value</b> <i class=object-type>String</i>
                                                             <i>Description: User Input value. Have to pass value as in
                                                                 string format. ie. : 'key-1'.<br>(Note: If field type is
-                                                                'timestamp' then value should be 'dd-mm-yyyy HH:MM PM/AM'
+                                                                'timestamp' then value should be 'dd-mm-yyyy HH:MM
+                                                                PM/AM'
                                                                 or if field type is 'date' then value should be
                                                                 'yyyy-mm-dd')</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
@@ -11268,6 +11544,16 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -11311,10 +11597,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -11376,7 +11665,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -11502,6 +11796,16 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -11577,10 +11881,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -11643,7 +11950,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/activity/multitype-as-string/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/multitype-as-string/', { 
@@ -11660,7 +11967,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -11709,7 +12021,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -11760,7 +12077,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -11922,7 +12244,12 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -12147,9 +12474,13 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: Role name</i></span></li>
                                                     <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                             <i>Description: Is final step</i></span></li>
-                                                    <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                                    <li><span><b>primary_key</b> <i class=object-type>String</i>
+                                                            <i>Description: If primary field is true then it should same
+                                                                key name</i></span>
                                                     </li>
-                                                    <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                                    <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                            <i>Description: If primary field is true then it should same
+                                                                value</i></span>
                                                     </li>
                                                     <li><span><b>created</b> <i class=object-type>String</i>
                                                             <i>Description: Created Date of the product (System
@@ -12336,7 +12667,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -12463,6 +12799,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -12540,10 +12886,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                         name</i></span></li>
                                             <li><span><b>is_final_step</b> <i class=object-type>Boolean</i>
                                                     <i>Description: Is final step</i></span></li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                             <li><span><b>created</b> <i class=object-type>String</i> <i>Description:
                                                         Created Date of the product (System Generate)</i></span></li>
                                             <li><span><b>modified</b> <i class=object-type>String</i> <i>Description:
@@ -12723,7 +13072,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -12770,7 +13124,8 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                     <li><span><b>value</b> <i class=object-type>String</i>
                                                             <i>Description: User Input value. Have to pass value as in
                                                                 string format. ie. : 'key-1'.<br>(Note: If field type is
-                                                                'timestamp' then value should be 'dd-mm-yyyy HH:MM PM/AM'
+                                                                'timestamp' then value should be 'dd-mm-yyyy HH:MM
+                                                                PM/AM'
                                                                 or if field type is 'date' then value should be
                                                                 'yyyy-mm-dd')</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
@@ -12779,6 +13134,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -12822,10 +13187,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span>
                                                 <ul></ul>
                                             </li>
                                         </ul>
@@ -12887,7 +13255,12 @@ response = requests.GET(url, headers=headers)</code></pre>
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -13013,6 +13386,16 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                                     <i>Description: User selected value</i></span></li>
                                                             <li><span><b>key</b> <i class=object-type>String</i>
                                                                     <i>Description: User selected value</i></span></li>
+                                                                    <li><span><b>step</b> <i class=object-type>Integer</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step number.</i></span></li>
+                                                                <li><span><b>role</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's role.</i></span></li>
+                                                                <li><span><b>user</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's first name & last name and organization name.</i></span></li>
+                                                                <li><span><b>company_name</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown and also the user act as member. It have the value of next step member's company admin first name & last name.</i></span></li>
+                                                                <li><span><b>email</b> <i class=object-type>String</i>
+                                                                        <i>Description: This field will appear only if the field type is Next Step User OR Quality Check User dropdown. It have the value of next step member's email.</i></span></li>
                                                         </ul>
                                                     </li>
                                                     <li><span><b>name</b> <i class=object-type>String</i>
@@ -13088,10 +13471,13 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same key name</i></span>
+                                            <li><span><b>primary_key</b> <i class=object-type>String</i> <i>Description:
+                                                        If primary field is true then it should same key name</i></span>
                                                 <ul></ul>
                                             </li>
-                                            <li><span><b>primary_value</b> <i class=object-type>String</i> <i>Description:                                                 If primary field is true then it should same value</i></span></li>
+                                            <li><span><b>primary_value</b> <i class=object-type>String</i>
+                                                    <i>Description: If primary field is true then it should same
+                                                        value</i></span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -13154,7 +13540,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/correct/activity/multitype-as-string/{activityId}/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/correct/activity/multitype-as-string/{activityId}/', { 
@@ -13171,7 +13557,12 @@ response = requests.GET(url, headers=headers)</code></pre>
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -13220,7 +13611,12 @@ const options = {
             "value": "",
             "options": [{
                 "label": "",
-                "key": ""
+                "key": "",
+                "step": "",
+                "role": "",
+                "user": "",
+                "company_name": "",
+                "email": ""
             }],
             "name": "",
             "label": "",
@@ -13271,7 +13667,12 @@ body = {
         "value": "",
         "options": [{
             "label": "",
-            "key": ""
+            "key": "",
+            "step": "",
+            "role": "",
+            "user": "",
+            "company_name": "",
+            "email": ""
         }],
         "name": "",
         "label": "",
@@ -13369,7 +13770,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                 <span>
                                                     <b>product_certificate_id</b>
                                                     <i class=object-type>String</i>
-                                                    <i>Description: 'product_certificate_id' is posted activity id. While you going to assign new member that time this id have to pass.</i>
+                                                    <i>Description: 'product_certificate_id' is posted activity id.
+                                                        While you going to assign new member that time this id have to
+                                                        pass.</i>
                                                 </span>
                                             </li>
                                             <li>
