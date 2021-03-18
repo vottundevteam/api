@@ -9904,6 +9904,14 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                         </div>
                     </div>
                     <div class=blocks-block>
+                        <div class=blocks-block-info-col><span>product_title</span> <span
+                                class="attr uk-text-meta">optional</span></div>
+                        <div class=blocks-block-desc-col><span class=keyword>string</span><br><span
+                                class="gray details">Product Name to return</span>
+                            <div class=request-box-details></div>
+                        </div>
+                    </div>
+                    <div class=blocks-block>
                         <div class=blocks-block-info-col><span>from_date</span> <span
                                 class="attr uk-text-meta">optional</span></div>
                         <div class=blocks-block-desc-col><span class=keyword>string</span><br><span
@@ -9916,6 +9924,14 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                 class="attr uk-text-meta">optional</span></div>
                         <div class=blocks-block-desc-col><span class=keyword>string</span><br><span
                                 class="gray details">End date. (yyyy-mm-dd)</span>
+                            <div class=request-box-details></div>
+                        </div>
+                    </div>
+                    <div class=blocks-block>
+                        <div class=blocks-block-info-col><span>workflow_name</span> <span
+                                class="attr uk-text-meta">optional</span></div>
+                        <div class=blocks-block-desc-col><span class=keyword>string</span><br><span
+                                class="gray details">Workflow Name to return</span>
                             <div class=request-box-details></div>
                         </div>
                     </div>
@@ -10288,10 +10304,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 </ul>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request GET \
-  --url https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0</code></pre>
+  --url https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
-                    <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0', { 
+                    <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0', { 
     method: 'GET', 
 }) 
 .then(e => e.json()) 
@@ -10307,7 +10323,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
  
 const options = { 
     method: 'GET', 
-    url: 'https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0', 
+    url: 'https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0', 
 };
  
 request(options, function (error, response, body) { 
@@ -10319,7 +10335,7 @@ request(options, function (error, response, body) {
                 <div class="tab-code tab-code-python" style="display: none">
                     <pre><code class=python>import requests
 
-url = "https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0"
+url = "https://api.vottun.com/api/v2/supply/activity/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0"
 
 headers = {
 
@@ -12183,6 +12199,14 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                         </div>
                     </div>
                     <div class=blocks-block>
+                        <div class=blocks-block-info-col><span>workflow_name</span> <span
+                                class="attr uk-text-meta">optional</span></div>
+                        <div class=blocks-block-desc-col><span class=keyword>string</span><br><span
+                                class="gray details">Workflow Name to return</span>
+                            <div class=request-box-details></div>
+                        </div>
+                    </div>
+                    <div class=blocks-block>
                         <div class=blocks-block-info-col><span>step</span> <span
                                 class="attr uk-text-meta">optional</span></div>
                         <div class=blocks-block-desc-col><span class=keyword>integer</span><br><span
@@ -12551,10 +12575,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 </ul>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request GET \
-  --url https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0</code></pre>
+  --url https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
-                    <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0', { 
+                    <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0', { 
     method: 'GET', 
 }) 
 .then(e => e.json()) 
@@ -12570,7 +12594,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
  
 const options = { 
     method: 'GET', 
-    url: 'https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0', 
+    url: 'https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0', 
 };
  
 request(options, function (error, response, body) { 
@@ -12582,7 +12606,7 @@ request(options, function (error, response, body) {
                 <div class="tab-code tab-code-python" style="display: none">
                     <pre><code class=python>import requests
 
-url = "https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&step=0"
+url = "https://api.vottun.com/api/v2/supply/activity/multitype-as-string/?page=0&in_batch_id=Something&email=Something&out_batch_id=Something&product_title=Something&from_date=Something&to_date=Something&workflow_name=Something&step=0"
 
 headers = {
 
