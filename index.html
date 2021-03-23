@@ -6628,7 +6628,9 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -6699,19 +6701,10 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                     <li><span><b>is_description</b> <i class=object-type>Boolean</i>
                                                             <i>Description: required / optional</i></span></li>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value. (Note: if Company Product
-                                                                OR Next Step User OR Quality Check User dropdown then
-                                                                have to pass field value as in array (list) format. i.e
-                                                                : ['<key-1>','<key-2>','<key-3>'].<br>if final step
-                                                                            Product (choose single) then have to pass
-                                                                            value as in string format. ie. :
-                                                                            'key-1'.<br>If field type is 'timestamp'
-                                                                            then value should be 'dd-mm-yyyy HH:MM
-                                                                            PM/AM' or if field type is 'date' then value
-                                                                            should be 'yyyy-mm-dd')</key-3>
-                                                                    </key-2>
-                                                                </key-1></i></span></li>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -6787,7 +6780,9 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -6878,7 +6873,7 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                     <li><span><b>is_description</b> <i class=object-type>Boolean</i>
                                                             <i>Description: required / optional</i></span></li>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
                                                             <i>Description: User Input value. (Note: if Company Product
                                                                 OR Next Step User OR Quality Check User dropdown then
                                                                 have to pass field value as in array (list) format. i.e
@@ -7010,7 +7005,7 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":["array"],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/', { 
@@ -7038,7 +7033,9 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
             "placeholder": "",
             "is_map_it": "",
             "is_description": "",
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -7092,7 +7089,9 @@ const options = {
             "placeholder": "",
             "is_map_it": "",
             "is_description": "",
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -7148,7 +7147,9 @@ body = {
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -7240,7 +7241,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 "placeholder": "string",
                 "is_map_it": true,
                 "is_description": true,
-                "value": "string",
+                "value": [
+                    "array"
+                ],
                 "options": [
                   {
                     "label": "string",
@@ -7361,21 +7364,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                     <li><span><b>is_description</b> <i class=object-type>Boolean</i>
                                                             <i>Description: required /
                                                                 optional</i></span></li>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value. (Note: if
-                                                                Company Product OR Next Step User OR Quality Check User
-                                                                dropdown then have to pass field
-                                                                value as in array (list) format. i.e : ['<key-1>','
-                                                                    <key-2>','<key-3>'].<br>if final step
-                                                                            Product (choose single) then have to pass
-                                                                            value as in string format. ie. :
-                                                                            'key-1'.<br>If field type is 'timestamp'
-                                                                            then value should be 'dd-mm-yyyy
-                                                                            HH:MM PM/AM' or if field type is 'date' then
-                                                                            value should be 'yyyy-mm-dd')
-                                                                        </key-3>
-                                                                    </key-2>
-                                                                </key-1></i></span></li>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -7624,7 +7616,9 @@ response = requests.GET(url, headers=headers)</code></pre>
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -7715,7 +7709,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                     <li><span><b>is_description</b> <i class=object-type>Boolean</i>
                                                             <i>Description: required / optional</i></span></li>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
                                                             <i>Description: User Input value. (Note: if Company Product
                                                                 OR Next Step User OR Quality Check User dropdown then
                                                                 have to pass field value as in array (list) format. i.e
@@ -7970,7 +7964,9 @@ response = requests.GET(url, headers=headers)</code></pre>
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -8041,7 +8037,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: required / optional</i></span></li>
                                                     <li><span><b>is_description</b> <i class=object-type>Boolean</i>
                                                             <i>Description: required / optional</i></span></li>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
                                                             <i>Description: User Input value. (Note: if Company Product
                                                                 OR Next Step User OR Quality Check User dropdown then
                                                                 have to pass field value as in array (list) format. i.e
@@ -8129,7 +8125,9 @@ response = requests.GET(url, headers=headers)</code></pre>
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -8374,7 +8372,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request PUT \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":["array"],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/', { 
@@ -8402,7 +8400,9 @@ response = requests.GET(url, headers=headers)</code></pre>
             "placeholder": "",
             "is_map_it": "",
             "is_description": "",
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -8456,7 +8456,9 @@ const options = {
             "placeholder": "",
             "is_map_it": "",
             "is_description": "",
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -8512,7 +8514,9 @@ body = {
         "placeholder": "",
         "is_map_it": "",
         "is_description": "",
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -9210,7 +9214,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
     "out_batch_id": "",
     "is_qc": "",
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -9262,7 +9268,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                         is Quality Check user</i></span></li>
                                             <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                 <ul>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
                                                             <i>Description: User Input value.<br>(Note: If Company
                                                                 Product OR Next Step User OR Quality Check User dropdown
                                                                 then have to pass field value as in array (list) format.
@@ -9400,7 +9406,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
     "transaction_address": "",
     "blockchain": 0,
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -9526,8 +9534,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                         Alastria</i></span></li>
                                             <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                 <ul>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value.</i></span></li>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -9688,7 +9698,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/activity/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":["array"],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/', { 
@@ -9702,7 +9712,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "out_batch_id": "",
         "is_qc": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -9756,7 +9768,9 @@ const options = {
         "out_batch_id": "",
         "is_qc": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -9812,7 +9826,9 @@ body = {
     "out_batch_id": "",
     "is_qc": "",
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -9994,7 +10010,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
         "blockchain": 0,
         "transaction_address": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -10137,8 +10155,10 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                                                                 blockchain</i></span></li>
                                                     <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                         <ul>
-                                                            <li><span><b>value</b> <i class=object-type>String</i>
-                                                                    <i>Description: User Input value.</i></span></li>
+                                                            <li><span><b>value</b> <i class=object-type>Array</i>
+                                                                    <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                        if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                        If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                             <li><span><b>options</b> <i
                                                                         class=object-type>Array</i></span>
                                                                 <ul>
@@ -10417,7 +10437,9 @@ response = requests.GET(url, headers=headers)</code></pre>
     "blockchain": 0,
     "transaction_address": "",
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -10544,8 +10566,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             </li>
                                             <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                 <ul>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value.</i></span></li>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -10822,7 +10846,9 @@ response = requests.GET(url, headers=headers)</code></pre>
     "out_batch_id": "",
     "is_qc": "",
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -10875,19 +10901,9 @@ response = requests.GET(url, headers=headers)</code></pre>
                                             <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                 <ul>
                                                     <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value.<br>(Note: If Company
-                                                                Product OR Next Step User OR Quality Check User dropdown
-                                                                then have to pass field value as in array (list) format.
-                                                                i.e : ['<key-1>','<key-2>','<key-3>'].<br>If final step
-                                                                            Product (choose single) then have to pass
-                                                                            value as in string format. ie. :
-                                                                            'key-1'.<br>If field type is 'timestamp'
-                                                                            then value should be 'dd-mm-yyyy HH:MM
-                                                                            PM/AM'
-                                                                            or if field type is 'date' then value should
-                                                                            be 'yyyy-mm-dd')</key-3>
-                                                                    </key-2>
-                                                                </key-1></i></span></li>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -11012,7 +11028,9 @@ response = requests.GET(url, headers=headers)</code></pre>
     "transaction_address": "",
     "blockchain": 0,
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -11138,8 +11156,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                         Alastria</i></span></li>
                                             <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                 <ul>
-                                                    <li><span><b>value</b> <i class=object-type>String</i>
-                                                            <i>Description: User Input value.</i></span></li>
+                                                    <li><span><b>value</b> <i class=object-type>Array</i>
+                                                            <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                     <li><span><b>options</b> <i class=object-type>Array</i></span>
                                                         <ul>
                                                             <li><span><b>label</b> <i class=object-type>String</i>
@@ -11300,7 +11320,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":["array"],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/', { 
@@ -11314,7 +11334,9 @@ response = requests.GET(url, headers=headers)</code></pre>
         "out_batch_id": "",
         "is_qc": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -11368,7 +11390,9 @@ const options = {
         "out_batch_id": "",
         "is_qc": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [{
                 "label": "",
                 "key": "",
@@ -11424,7 +11448,9 @@ body = {
     "out_batch_id": "",
     "is_qc": "",
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -11678,7 +11704,9 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
     "transaction_address": "",
     "blockchain": 0,
     "field_set": [{
-        "value": "",
+        "value": [
+            "array"
+        ],
         "options": [{
             "label": "",
             "key": "",
@@ -14033,7 +14061,9 @@ response = requests.GET(url, headers=headers)</code></pre>
         "is_mistake": "",
         "date_issued": "",
         "field_set": [{
-            "value": "",
+            "value": [
+                "array"
+            ],
             "options": [],
             "name": "",
             "label": "",
@@ -14203,8 +14233,10 @@ response = requests.GET(url, headers=headers)</code></pre>
                                                             <i>Description: Date of issued</i></span></li>
                                                     <li><span><b>field_set</b> <i class=object-type>Array</i></span>
                                                         <ul>
-                                                            <li><span><b>value</b> <i class=object-type>String</i>
-                                                                    <i>Description: User Input value.</i></span></li>
+                                                            <li><span><b>value</b> <i class=object-type>Array</i>
+                                                                    <i>Description: User Input value. (Note: If Company Product OR Next Step User OR Quality Check User dropdown then have to pass field value as in array (list) format. i.e : ['<key-1>','<key-2>','<key-3>'].
+                                                                        if final step Product (choose single) then have to pass value as in array format single value. ie. : ['key-1']. If others field type then value should be in array format single string. i.e: ['string'].
+                                                                        If field type is 'timestamp' then value should be ['dd-mm-yyyy HH:MM AM/PM'] or if field type is 'date' then value should be ['yyyy-mm-dd'])</i></span></li>
                                                             <li><span><b>options</b> <i
                                                                         class=object-type>Array</i></span></li>
                                                             <li><span><b>name</b> <i class=object-type>String</i>
