@@ -7098,7 +7098,7 @@ response = requests.PUT(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/', { 
@@ -8650,7 +8650,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request PUT \
   --url https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/ \
-  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
+  --body '{"current_emails":"","workflow_id":"","role":"","is_qc":"","step":"","field_set":{"type":"","required":"","save":"","show":"","is_lock_it":"","out_box":"","in_box":"","primary":"","enable_furture":"","dateformat":"","automatic":"","label":"","name":"","placeholder":"","is_map_it":"","is_description":"","value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""}},"no_out_badge":"","show_role":"","is_final_step":"","graphic_show_role":""}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/steps/workflow/{StepId}/', { 
@@ -10080,7 +10080,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/activity/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/', { 
@@ -11946,7 +11946,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":[""],"options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/correct/activity/{activityId}/', { 
@@ -12712,7 +12712,7 @@ response = requests.POST(url, headers=headers, body=body)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/activity/multitype-as-string/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/activity/multitype-as-string/', { 
@@ -14511,7 +14511,7 @@ response = requests.GET(url, headers=headers)</code></pre>
                 <div class="tab-code tab-code-curl">
                     <pre><code class=bash>curl --request POST \
   --url https://api.vottun.com/api/v2/supply/correct/activity/multitype-as-string/{activityId}/ \
-  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
+  --body '{"product":"","issuer_email":"","workflow_id":"","unique_code":"","in_batch_id":"","out_batch_id":"","is_qc":"","field_set":{"value":"","options":{"label":"","key":"","step": "","role": "","user": "","company_name": "","email": "","id": "","title": "","workflow_name": "","workflow_id": ""},"name":"","label":"","type":"","placeholder":"","is_lock_it":"","save":"","automatic":"","show":"","out_box":"","in_box":"","is_map_it":"","is_description":"","primary":"","enable_furture":"","dateformat":"","required":""},"primary_key":[],"primary_value":[]}'</code></pre>
                 </div>
                 <div class="tab-code tab-code-javascript" style="display: none">
                     <pre><code class=javascript>fetch('https://api.vottun.com/api/v2/supply/correct/activity/multitype-as-string/{activityId}/', { 
